@@ -3,15 +3,18 @@
 }
 
 .todolist {
-    background-color:darkcyan;
+    background-color:rgb(5, 50, 109);
     width: 40%;
     color: darkblue;
     padding: 10px;
 }
 
 h1 {
-    font-family: 'Redressed', cursive;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
+    color: white;
+    line-height: 2;
+    letter-spacing: 2px;
 }
 
 .form {
@@ -21,25 +24,35 @@ h1 {
 input {
     color: rgba(0,0,139,0.5);
     border: 0.5px solid darkblue;
+    padding: 10px;
+    font-size: 20px;
 }
 
 #btn_add {
     color: darkblue;
     border: 0.5px solid darkblue;
     background-color:lightsteelblue;
+    font-size: 20px;
+    padding: 10px;
 }
 
 #btn_add:hover {
     color: white;
 }
+
 ul {
+    padding: 0;
+}
+
+ul li {
     display: block;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 14pt;
     line-height: 2;
-    background-color:lightsteelblue;
-    margin: 5% auto;
+    letter-spacing: 2px;
+    margin: auto 15px;
+    padding: 5px 20px;
     list-style-type: none;
 }
 
@@ -53,11 +66,13 @@ li {
 }
 
 li:hover {
-    color: darkcyan;
+    color: rgb(109, 137, 214);
 }
 
-.del {
-    position: absolute;
-    right: 0;
-    color: white;
+ul li:nth-child(odd) {
+    background: #c3def7;
+}
+
+ul li:nth-child(even) {
+    background: #82b4e2;
 }
